@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixon Online</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="utils/style.css">
+
+</head>
+
+<body>
+
+<!-- ===== Topbar ===== -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Left -->
+    <div>
+      <i class="fas fa-phone"></i>
+      Hotline: 01790 600 250, 01841 064 966
+    </div>
+
+    <!-- Right -->
+    <div>
+        <a href="https://www.facebook.com/mixonbd" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/01790600250" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="utils/logo.jpeg" alt="Mixon Online Logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="coverage.html">Coverage Area</a>
+        </li>
+
+        <!-- Packages Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Packages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="home_p.html">Home Packages</a></li>
+            <li><a class="dropdown-item" href="Corp_P.html">Corporate Packages</a></li>
+          </ul>
+        </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+           Our Policies
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="P_Policy.html">Privecy Policy</a></li>
+            <li><a class="dropdown-item" href="tnc.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+        <!-- Button -->
+        <li class="nav-item">
+          <a class="btn btn-connection ms-3" href="form.html">Get Connection</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- ===== Slider ===== -->
+<div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+  </div>
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="utils/slide1.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>High Speed Internet</h2>
+        <p>Experience lightning fast connectivity</p>
+        <a href="form.html" class="btn btn-theme">Get Connection</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="utils/slide2.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Reliable Network</h2>
+        <p>24/7 uptime & strong coverage</p>
+        <a href="home_p.html" class="btn btn-theme">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="utils/slide3.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Affordable Plans</h2>
+        <p>Best price for home & corporate users</p>
+        <a href="Contact.html" class="btn btn-theme">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+
+
+<div class="d-flex flex-column min-vh-100">
+
+  <!-- Content -->
+  <div class="container flex-grow-1">
+   <div class="container">
+    <div class="section-badge">
+        <h1><i class="fas fa-globe me-2" style="color: #000;"></i> OUR PACKAGES</h1>
+        <p>ULTRA FAST BROADBAND CONNECTION| UNLIMITED BROWSING AND FUN</p>
+    </div>
+
+    <div class="row g-4">
+        
+        <!-- BRONZE -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="ribbon-wrapper"><div class="ribbon">জনপ্রিয়</div></div>
+                <div class="card-header bg-bronze">
+                    <h3>Bronze</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>20 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">500</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle check-icon"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-times-circle" style="color:#e74c3c;"></i> Real IP</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-bronze"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+
+        <!-- SILVER -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="card-header bg-silver">
+                    <h3>Silver</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>30 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">800</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-times-circle"></i> Real IP</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-silver"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+
+        <!-- GOLD -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="card-header bg-gold">
+                    <h3>Gold</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>40 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">1000</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-times-circle"></i> Real IP</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-gold"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+
+        <!-- PLATINUM (Best Value Ribbon) -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="ribbon-wrapper"><div class="ribbon best-value">সেরা মান</div></div>
+                <div class="card-header bg-platinum">
+                    <h3>Platinum</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>50 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">1200</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Real IP ✓</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-platinum"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+
+        <!-- DIAMOND -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="card-header bg-diamond">
+                    <h3>Diamond</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>70 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">1500</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Real IP ✓</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-diamond"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+
+        <!-- VIP PACK -->
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card pricing-card text-center">
+                <div class="card-header bg-vip">
+                    <h3>VIP Pack</h3>
+                    <div class="speed"><i class="fas fa-tachometer-alt me-1"></i>90 Mbps</div>
+                    <div class="price">
+                        <span class="currency">৳</span>
+                        <span class="amount">2000</span>
+                        <span style="font-size: 0.8rem;">/মাস</span>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Youtube</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree Facebook</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Bufferfree TikTok</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> BDIX Server</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> Real IP ✓</li>
+                    <li class="list-group-item"><i class="fas fa-check-circle"></i> FTP/Movie Server</li>
+                </ul>
+                <div class="ratio-section ratio-vip"><i class="fas fa-chart-line me-1"></i> YES 1:8 Ratio</div>
+                <div class="card-body"><a href="form.html" class="btn btn-call w-100"> Get Connection</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- extra info: note about service -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="bg-white p-3 rounded-4 shadow-sm d-inline-flex flex-wrap gap-4 justify-content-center">
+                <span class="mx-3"><i class="fas fa-check-circle text-success"></i> ২৪/৭ সাপোর্ট</span>
+                <span class="mx-3"><i class="fas fa-wifi text-primary"></i> ফাইবার সংযোগ</span>
+                <span class="mx-3"><i class="fas fa-tv"></i> আইপি টিভি বিকল্প</span>
+                <span class="mx-3"><i class="fas fa-rocket text-warning"></i> নো ফেয়ার ইউসেজ পলিসি</span>
+            </div>
+            <p class="mt-4 text-secondary small">* দাম সংযোজন কর সহ। দ্রুত সংযোগ পেতে আজই যোগাযোগ করুন</p>
+        </div>
+    </div>
+</div>
+  </div>
+
+  <div class="container">
+    <!-- STATS + INTRODUCTION ROW -->
+    <div class="row g-4 mb-5 align-items-center">
+        <div class="col-md-5">
+            <h3 class="section-title mb-3"><i class="fas fa-wifi me-2"></i> আমাদের পরিবেশন এলাকা</h3>
+            <p class="text-muted" style="text-align: justify;">Mixon Online তার যাত্রা শুরু করেছিল ২০০৯ সালে মিরবাগ কেন্দ্র করে। বর্তমানে আমরা <strong>রমনা থানা ও হাতিরঝিল থানা</strong> জুড়ে ১৮টিরও বেশি গুরুত্বপূর্ণ এলাকায় দ্রুতগতির ইন্টারনেট সংযোগ সরবরাহ করছি। নিচের লিস্টে আপনার লোকেশন থাকলে নির্দ্বিধায় যোগাযোগ করুন।</p>
+            <div class="d-flex align-items-center gap-3 mt-3">
+                <div><i class="fas fa-check-circle text-success"></i> <strong>100%</strong> ফাইবার কভারেজ</div>
+                <div><i class="fas fa-home text-primary"></i> BEST HOME AND CORPORATE IN THE AREA</div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="bg-white rounded-4 p-3 shadow-sm border">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="mb-2 mb-sm-0">
+                        <i class="fas fa-tachometer-alt fa-fw" style="color:#f4b942;"></i> 
+                        <span class="fw-semibold">সম্পূর্ণ কভারেজ ম্যাপ : </span>
+                        <span class="text-secondary">মিরবাগ থেকে হাতিরঝিল, মালিবাগ রেলগেট হয়ে মগবাজার ওয়্যারলেস</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-map" id="dummyMapBtn"><i class="fas fa-location-dot"></i> জোন দেখুন</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALL SERVICE AREAS GRID (ONLY AREA NAMES, NO BANGLA SUBTEXT) -->
+    <div class="row g-3 coverage-grid">
+        <!-- Mirbagh -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-location-dot"></i> Mirbagh</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Mirertek -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-street-view"></i> Mirertek</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- East Hajipara -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-home"></i> East Hajipara</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- West Hajipara -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-building"></i> West Hajipara</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Chowdhury Para R/A -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-city"></i> Chowdhury Para R/A</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Mirbagh Notun Rasta -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-road"></i> Mirbagh Notun Rasta</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Bou Bazar Road -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-store"></i> Bou Bazar Road</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Rampura -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-subway"></i> Rampura</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Malibagh Bazar -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-basket-shopping"></i> Malibagh Bazar</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Malibagh Railgate -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-train"></i> Malibagh Railgate</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Modhubagh -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-tree"></i> Modhubagh</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Hatirjheel -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-water"></i> Hatirjheel</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- East Nayatola -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-sun-plant-wilt"></i> East Nayatola</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Nayatola Chairman Goli -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-gavel"></i> Nayatola Chairman Goli</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Aambagan -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-apple-alt"></i> Aambagan</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- T&T Colony -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-phone-alt"></i> T&T Colony</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Moghbazar Wireless -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-satellite-dish"></i> Moghbazar Wireless</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+        <!-- Wireless Railgate -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="zone-card">
+                <div class="zone-header"><h5><i class="fas fa-train-subway"></i> Wireless Railgate</h5></div>
+                <div class="zone-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXTRA INFO ABOUT COVERAGE & REPUTATION -->
+    <div class="row mt-5 g-4">
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 h-100 shadow-sm border-0">
+                <div class="d-flex gap-3">
+                    <div><i class="fas fa-handshake fa-2x" style="color:#f4b942;"></i></div>
+                    <div>
+                        <h5 class="fw-bold">রমনা থানা + হাতিরঝিল থানায় বিশ্বস্ত সেবা</h5>
+                        <p class="text-muted small">Mixon Online reputed ISP হিসেবে রমনা থানা ও হাতিরঝিল থানা জুড়ে সুপরিচিত। আমাদের গ্রাহকদের সিংহভাগই Mirbagh, Malibagh, Rampura, Moghbazar Wireless সহ এই তালিকার প্রতিটি জোন থেকে সংযুক্ত হয়েছেন।</p>
+                        <span class="badge bg-primary bg-opacity-10 text-dark"><i class="fas-regular fa-clock"></i> ২০০৯ থেকে নিরবচ্ছিন্ন সেবা</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 h-100 shadow-sm border-0">
+                <div class="d-flex gap-3">
+                    <div><i class="fas fa-crown fa-2x" style="color:#d4af37;"></i></div>
+                    <div>
+                        <h5 class="fw-bold">স্পীড প্যাকেজ ও কভারেজ হাইলাইট</h5>
+                        <ul class="list-unstyled small text-secondary mt-2">
+                            <li><i class="fas fa-check text-success me-2"></i> 20 Mbps থেকে 90 Mbps পর্যন্ত আনলিমিটেড প্ল্যান</li>
+                            <li><i class="fas fa-check text-success me-2"></i> ফাইবার অপটিক নেটওয়ার্ক (FTTH)</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Real IP, BDIX, FTP এবং মুভি সার্ভার সুবিধা</li>
+                            <li><i class="fas fa-check text-success me-2"></i> 1:8 ব্যান্ডউইথ রেশিও নিশ্চিত করে বাফারফ্রি অভিজ্ঞতা</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action / contact row -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="footer-note">
+                <i class="fas fa-map-pin me-2" style="color:#1c5a7a;"></i> <strong>কর্পোরেট অফিস:</strong> 16/A/16, Mirbagh, Moghbazar, Dhaka-1217 (হালিম বয়াতির মাজারের পাশে)
+                <div class="mt-2">
+                    <a href="#" class="text-decoration-none fw-semibold" id="contactNowBtn" style="color:#f4b942;"><i class="fas fa-phone-alt"></i> কানেক্ট করতে কল করুন</a> 
+                    <span class="mx-2 text-muted">|</span> 
+                    <span><i class="fab fa-whatsapp"></i> 01790 600 250, <i class="fas fa-phone"></i> 01841 064 966</span>
+                </div>
+            </div>
+            <p class="text-muted small mt-4"><i class="bi bi-back"></i> Mixon Online 2009-2025 | এলাকা তালিকায় উল্লেখিত প্রতিটি পয়েন্টে ফাইবার ও ব্রডব্যান্ড সেবা উপলব্ধ।</p>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+            © 2026 M ixon Online ISP. All Rights Reserved.
+  </footer>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

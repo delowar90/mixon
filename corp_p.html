@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Corporate Packages | Mixon Online</title>
+  <!-- Bootstrap 5 + Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', 'Noto Sans Bengali', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #eef2f9 0%, #d9e2ef 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* floating animated shapes background */
+    .bg-shapes {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .shape {
+      position: absolute;
+      background: rgba(27, 107, 143, 0.08);
+      border-radius: 60% 40% 70% 30% / 40% 50% 50% 60%;
+      filter: blur(35px);
+      animation: floatShape 18s infinite alternate ease-in-out;
+    }
+
+    .shape-1 {
+      width: 300px;
+      height: 300px;
+      top: -80px;
+      left: -80px;
+      background: rgba(27, 107, 143, 0.12);
+      animation-duration: 22s;
+    }
+
+    .shape-2 {
+      width: 450px;
+      height: 450px;
+      bottom: -120px;
+      right: -100px;
+      background: rgba(210, 180, 140, 0.1);
+      animation-duration: 25s;
+      animation-delay: -2s;
+    }
+
+    .shape-3 {
+      width: 200px;
+      height: 200px;
+      top: 40%;
+      left: 70%;
+      background: rgba(100, 150, 180, 0.1);
+      animation-duration: 19s;
+      animation-delay: -5s;
+    }
+
+    .shape-4 {
+      width: 280px;
+      height: 280px;
+      bottom: 20%;
+      left: 5%;
+      background: rgba(255, 193, 7, 0.07);
+      animation-duration: 21s;
+    }
+
+    @keyframes floatShape {
+      0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+        border-radius: 60% 40% 70% 30% / 40% 50% 50% 60%;
+      }
+      100% {
+        transform: translate(30px, 40px) rotate(12deg) scale(1.08);
+        border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%;
+      }
+    }
+
+    /* main card */
+    .notfound-card {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(2px);
+      border-radius: 56px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 35px 60px rgba(0, 0, 0, 0.12), 0 12px 25px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      max-width: 650px;
+      width: 100%;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.5);
+      animation: fadeSlideUp 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
+    }
+
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.96);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* animated 404 text with glitch and floating */
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1b6b8f, #0f4b63, #2c8eb3);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 4s ease infinite, floatText 3s ease-in-out infinite;
+      letter-spacing: 10px;
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* ghost / playful element */
+    .lost-emoji {
+      font-size: 5.5rem;
+      margin: 0.5rem 0;
+      display: inline-block;
+      animation: waveEmoji 2s ease-in-out infinite;
+      filter: drop-shadow(0 10px 12px rgba(0,0,0,0.1));
+    }
+
+    @keyframes waveEmoji {
+      0% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(12deg) scale(1.08); }
+      75% { transform: rotate(-8deg) scale(1.05); }
+      100% { transform: rotate(0deg) scale(1); }
+    }
+
+    .title-404 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f3b45;
+      margin-top: 0.5rem;
+    }
+
+    .description {
+      color: #5a6e7c;
+      font-size: 1rem;
+      margin: 1rem 0 1.6rem;
+      line-height: 1.5;
+    }
+
+    .btn-home {
+      background: linear-gradient(95deg, #1b6b8f, #0f5b7a);
+      border: none;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 14px rgba(27, 107, 143, 0.3);
+      margin-right: 12px;
+      margin-bottom: 8px;
+    }
+
+    .btn-home:hover {
+      background: #0e4e6b;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 22px rgba(27, 107, 143, 0.4);
+      color: white;
+    }
+
+    .btn-contact {
+      background: rgba(27, 107, 143, 0.12);
+      border: 1.5px solid #1b6b8f;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #1b6b8f;
+      transition: 0.3s;
+    }
+
+    .btn-contact:hover {
+      background: #1b6b8f;
+      color: white;
+      transform: translateY(-3px);
+      border-color: #1b6b8f;
+    }
+
+    .search-area {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px dashed rgba(0,0,0,0.1);
+    }
+
+    .input-group-custom {
+      background: white;
+      border-radius: 60px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .input-group-custom:focus-within {
+      border-color: #1b6b8f;
+      box-shadow: 0 0 0 4px rgba(27,107,143,0.2);
+    }
+
+    .form-control-search {
+      border: none;
+      padding: 12px 20px;
+      background: transparent;
+      font-size: 0.95rem;
+    }
+
+    .form-control-search:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    .btn-search {
+      background: #1b6b8f;
+      border: none;
+      padding: 0 24px;
+      color: white;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .btn-search:hover {
+      background: #0e4e6b;
+    }
+
+    .brand-footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #6c7a89;
+    }
+
+    .brand-footer a {
+      color: #1b6b8f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* particle animated dots (extra cuteness) */
+    .dot {
+      position: absolute;
+      background: #1b6b8f;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: dotFloat 12s infinite linear;
+      z-index: 0;
+    }
+
+    @keyframes dotFloat {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+      }
+      20% { opacity: 0.3; }
+      80% { opacity: 0.2; }
+      100% {
+        transform: translateY(-80px) translateX(40px);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .notfound-card {
+        padding: 1.8rem;
+      }
+      .error-code {
+        font-size: 5rem;
+        letter-spacing: 5px;
+      }
+      .lost-emoji {
+        font-size: 4rem;
+      }
+      .title-404 {
+        font-size: 1.5rem;
+      }
+      .btn-home, .btn-contact {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Animated background shapes -->
+<div class="bg-shapes">
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+</div>
+
+<!-- Dynamic floating micro dots (generated with JS) -->
+<div id="dotsContainer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;"></div>
+
+<div class="notfound-card">
+  <!-- 404 animated main area -->
+  <div class="error-code">404</div>
+  
+  <div class="lost-emoji">
+    <i class="fas fa-map-marked-alt"></i> <i class="fas fa-question-circle"></i>
+  </div>
+  
+  <h1 class="title-404">PAGE NOT FOUND!</h1>
+  <p class="description">
+    THE PAGE YOU ARE LOIKING FOR IS TEMPORARILILY DOWN  
+    <br>PLEASE GO TO HOME OR CONTACT US
+  </p>
+  
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <a href="index.html" class="btn-home"><i class="fas fa-home me-2"></i>হোমপেজে যান</a>
+    <a href="Contact.html" id="contactRedirectBtn" class="btn-contact"><i class="fas fa-envelope me-2"></i>যোগাযোগ করুন</a>
+  </div>
+  
+  <!-- smart search suggestion (site search simulation) -->
+  <!-- <div class="search-area">
+    <p class="small text-muted mb-2"><i class="fas fa-search"></i> আপনি কী খুঁজছেন? অনুসন্ধান করুন:</p>
+    <div class="input-group-custom d-flex align-items-stretch">
+      <input type="text" id="searchInput" class="form-control-search form-control" placeholder="পণ্য বা পৃষ্ঠার নাম লিখুন...">
+      <button id="doSearchBtn" class="btn-search" type="button"><i class="fas fa-arrow-right"></i> খুঁজুন</button>
+    </div>
+    <div id="searchFeedback" class="small mt-2 text-start text-muted" style="font-size: 0.75rem;"></div>
+  </div> -->
+  
+  <div class="brand-footer">
+    <i class="fas fa-store"></i> Mixon Online — 16/A/16, Mirbagh, Moghbazar, Dhaka <br>
+    <a href="https://www.facebook.com/mixonbd" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> &nbsp;|&nbsp;
+    <a href="mailto:info@mixonbd.com">info@mixonbd.com</a> &nbsp;|&nbsp;
+    <a href="tel:01790600250">01790 600 250</a>
+  </div>
+</div>
+
+<script>
+  // Animated floating dots particle effect
+  function createDots() {
+    const container = document.getElementById('dotsContainer');
+    if (!container) return;
+    const dotCount = 35;
+    for (let i = 0; i < dotCount; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      const size = Math.random() * 8 + 3; // 3px to 11px
+      dot.style.width = size + 'px';
+      dot.style.height = size + 'px';
+      dot.style.left = Math.random() * 100 + '%';
+      dot.style.top = Math.random() * 100 + '%';
+      dot.style.animationDelay = Math.random() * 15 + 's';
+      dot.style.animationDuration = Math.random() * 10 + 8 + 's';
+      dot.style.opacity = Math.random() * 0.3 + 0.1;
+      container.appendChild(dot);
+    }
+  }
+  createDots();
+
+  // Random animated bouncy helper for 404: double glitch effect on hover (optional)
+  const errorCodeDiv = document.querySelector('.error-code');
+  if(errorCodeDiv) {
+    errorCodeDiv.addEventListener('mouseenter', () => {
+      errorCodeDiv.style.animation = 'none';
+      errorCodeDiv.offsetHeight;
+      errorCodeDiv.style.animation = 'gradientShift 4s ease infinite, floatText 0.6s ease-in-out 2';
+      setTimeout(() => {
+        errorCodeDiv.style.animation = 'gradientShift 4s ease infinite, floatText 3s ease-in-out infinite';
+      }, 600);
+    });
+  }
+  
+  // Contact redirect button logic: scroll to contact page / go to contact page (since our earlier contact page is separate)
+  // In 404 page, we provide redirection to contact section or contact page. Mixon Online contact page could be /contact.html but we simply navigate to the contact page we designed.
+  // But in single demo standalone we can redirect to a relative contact page or if we want we open the previous contact form in new tab.
+  // We'll create a smart redirect: if our current domain is mixonbd.com, guide them to /contact, else for demo we open contact.html (we can use previous HTML? but we can just show alert and offer to go to homepage contact.
+  // Better: attach a modal or just redirect to the contact page that we have previously given? As a developer, we can make the contact button open a new tab with contact page (but it's a separate html). 
+  // But since the user asked for a 404 animated page, we assume this is a custom 404 for mixon online. We'll redirect them to the contact page from the earlier generated version by opening same origin but we'll just show an interactive message: because contact page not in this file, we can redirect to main site contact or display a floating toast.
+  // For user experience: we will detect if we are on local / file, if not we redirect to the contact page using the website contact link. 
+  // Provide smooth UI: show a cute swal-like noti or just go to "mailto:info@mixonbd.com" alternative? But button says "যোগাযোগ করুন" and we'll trigger a nice popup, or open a modal with contact info.
+  // To make it fully functional without breaking, we will implement a beautiful inline contact quick modal (Bootstrap not instant? we add a lightweight modal even without bootstrap JS? we already have bootstrap JS loaded? Yes bootstrap JS from cdn, we can use modal)
+  // Add contact quick modal that shows the email and phone and a link to email client.
+  let modalHtml = `
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 32px; overflow:hidden;">
+          <div class="modal-header border-0" style="background: #1b6b8f; color:white;">
+            <h5 class="modal-title fw-bold" id="contactModalLabel"><i class="fas fa-headset me-2"></i>যোগাযোগ করুন</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-3">
+            <div class="text-center mb-3">
+              <i class="fas fa-comment-dots fa-3x" style="color:#1b6b8f;"></i>
+            </div>
+            <p class="text-center">আমরা দ্রুত সেবা দিতে প্রতিশ্রুতিবদ্ধ। নিচের মাধ্যমগুলোর মাধ্যমে আমাদের সাথে যোগাযোগ করুন:</p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><i class="fas fa-phone-alt me-2 text-primary"></i> <strong>কল করুন:</strong> <a href="tel:01790600250">01790 600 250</a> , <a href="tel:01841064966">01841 064 966</a></li>
+              <li class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> <strong>ইমেইল:</strong> <a href="mailto:info@mixonbd.com">info@mixonbd.com</a></li>
+              <li class="mb-2"><i class="fab fa-facebook me-2 text-primary"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/mixonbd" target="_blank">Mixon Online FB Page</a></li>
+              <li><i class="fas fa-map-marker-alt me-2 text-primary"></i> <strong>ঠিকানা:</strong> 16/A/16, Mirbagh, Moghbazar, Dhaka-1217</li>
+            </ul>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ করুন</button>
+            <a href="mailto:info@mixonbd.com?subject=যোগাযোগের%20বিষয়%20(404%20পৃষ্ঠা থেকে)" class="btn btn-primary" style="background:#1b6b8f;">ইমেইল পাঠান</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  // Append modal to body if not exists
+  if (!document.getElementById('contactModal')) {
+    const modalDiv = document.createElement('div');
+    modalDiv.innerHTML = modalHtml;
+    document.body.appendChild(modalDiv);
+  }
+  
+  const contactTriggerBtn = document.getElementById('contactRedirectBtn');
+  if (contactTriggerBtn) {
+    contactTriggerBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const bsModal = new bootstrap.Modal(document.getElementById('contactModal'));
+      bsModal.show();
+    });
+  }
+  
+  // Search simulation with clever feedback for 404 page
+  const searchBtn = document.getElementById('doSearchBtn');
+  const searchInput = document.getElementById('searchInput');
+  const searchFeedbackDiv = document.getElementById('searchFeedback');
+  
+  function simulateSearch() {
+    const query = searchInput.value.trim().toLowerCase();
+    if (query === "") {
+      searchFeedbackDiv.innerHTML = '<i class="fas fa-info-circle"></i> দয়া করে কিছু লিখুন।';
+      searchFeedbackDiv.style.color = '#b85c00';
+      setTimeout(() => {
+        if(searchFeedbackDiv.innerHTML.includes('দয়া করে কিছু লিখুন')) searchFeedbackDiv.innerHTML = '';
+      }, 2000);
+      return;
+    }
+    // mock suggest for mixon online categories
+    const suggestions = {
+      'ল্যাপটপ': 'https://www.mixonbd.com/category/laptop',
+      'মোবাইল': 'https://www.mixonbd.com/category/mobile',
+      'গেমিং': 'https://www.mixonbd.com/category/gaming',
+      'হেডফোন': 'https://www.mixonbd.com/category/audio',
+      'মাউস': 'https://www.mixonbd.com/product/mouse',
+      'কিবোর্ড': 'https://www.mixonbd.com/product/keyboard',
+      'মনিটর': 'https://www.mixonbd.com/product/monitor'
+    };
+    let matched = null;
+    for (let key in suggestions) {
+      if (query.includes(key) || key.includes(query)) {
+        matched = suggestions[key];
+        break;
+      }
+    }
+    if (matched) {
+      searchFeedbackDiv.innerHTML = `<i class="fas fa-external-link-alt"></i> "${query}" এর জন্য পণ্য পাওয়া গেছে! <a href="${matched}" target="_blank">এখানে ক্লিক করুন</a> অথবা সাইটে যান।`;
+      searchFeedbackDiv.style.color = '#0f5b7a';
+    } else {
+      searchFeedbackDiv.innerHTML = `<i class="fas fa-search"></i> "${query}" সম্পর্কে কোনো সরাসরি পৃষ্ঠা নেই। অনুগ্রহ করে হোমপেজ ঘুরে দেখুন অথবা যোগাযোগ করুন। <br> <a href="https://www.mixonbd.com" target="_blank"><strong>mixonbd.com</strong></a> এ যান`;
+      searchFeedbackDiv.style.color = '#4a5c6c';
+    }
+  }
+  
+  searchBtn.addEventListener('click', simulateSearch);
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') simulateSearch();
+  });
+  
+  // Also add micro interaction: bouncing icon on lost-emoji click
+  const emojiWrap = document.querySelector('.lost-emoji');
+  if(emojiWrap){
+    emojiWrap.addEventListener('click', ()=>{
+      emojiWrap.style.animation = 'none';
+      emojiWrap.offsetHeight;
+      emojiWrap.style.animation = 'waveEmoji 0.7s ease-in-out';
+      setTimeout(()=>{ emojiWrap.style.animation = 'waveEmoji 2s ease-in-out infinite'; }, 700);
+    });
+  }
+  
+  // Additional particle effect on window resize consistency
+  window.addEventListener('resize', () => {
+    const container = document.getElementById('dotsContainer');
+    if (container) {
+      while(container.firstChild) container.removeChild(container.firstChild);
+      createDots();
+    }
+  });
+  
+  // contact modal cleanup - Bootstrap initialization already works
+  // footer contact links any hover animation
+  const brandLinks = document.querySelectorAll('.brand-footer a');
+  brandLinks.forEach(link => {
+    link.addEventListener('mouseenter', (e) => {
+      e.target.style.transition = 'all 0.2s';
+      e.target.style.opacity = '0.8';
+    });
+    link.addEventListener('mouseleave', (e) => {
+      e.target.style.opacity = '1';
+    });
+  });
+  
+  // for extra dynamic animated 404, add sparkle effect on 404 numbers (optional)
+  const errorElem = document.querySelector('.error-code');
+  if(errorElem){
+    setInterval(() => {
+      if(Math.random() > 0.7){
+        errorElem.style.textShadow = '0 0 8px rgba(27,107,143,0.5)';
+        setTimeout(()=>{ errorElem.style.textShadow = 'none'; }, 200);
+      }
+    }, 1800);
+  }
+  
+  // Provide google map link redirection on address click? not needed but nice.
+  const addressLine = document.querySelector('.brand-footer i.fa-store')?.parentElement;
+  if(addressLine && addressLine.innerText.includes('Mirbagh')){
+    addressLine.style.cursor = 'pointer';
+    addressLine.addEventListener('click', () => {
+      window.open('https://www.google.com/maps/place/Mixon+Online/@23.756293,90.4136025,20.75z/data=!4m6!3m5!1s0x3755b87de72ea7e5:0x50045e33928ad554!8m2!3d23.7562438!4d90.4137006!16s%2Fg%2F1pp2vbcqy?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D', '_blank');
+    });
+  }
+  
+  // preload hover effect on main buttons
+  console.log('✨ Animated 404 page ready | Mixon Online');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Registration</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="utils/style.css">
+
+</head>
+
+
+<body>
+    <!-- ===== Topbar ===== -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Left -->
+    <div>
+      <i class="fas fa-phone"></i>
+      Hotline: 01790 600 250, 01841 064 966
+    </div>
+
+    <!-- Right -->
+    <div>
+        <a href="https://www.facebook.com/mixonbd" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/01790600250" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="utils/logo.jpeg" alt="Mixon Online Logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="coverage.html">Coverage Area</a>
+        </li>
+
+        <!-- Packages Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Packages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="home_p.html">Home Packages</a></li>
+            <li><a class="dropdown-item" href="Corp_P.html">Corporate Packages</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Our Policies
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="P_Policy.html">Privecy Policy</a></li>
+            <li><a class="dropdown-item" href="tnc.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+        <!-- Button -->
+        <li class="nav-item">
+          <a class="btn btn-connection ms-3" href="form.html">Get Connection</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<div class="container">
+    <div class="form-card">
+        <div class="card-header-custom">
+            <h2><i class="fas fa-gem me-2"></i>Package Registration</h2>
+            <p>আপনার এলাকা ও প্যাকেজ নির্বাচন করুন</p>
+        </div>
+
+        <div class="form-body">
+            <form id="registrationForm" novalidate>
+                <!-- Name field -->
+                <div class="mb-3">
+                    <label class="form-label" for="fullName">
+                        <i class="fas fa-user-circle"></i> Full Name <span class="required-star">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your name here..." autocomplete="name" required>
+                    <div class="invalid-feedback">Please Write Your Name</div>
+                </div>
+
+                <!-- Phone number with BD prefix -->
+                <div class="mb-3">
+                    <label class="form-label" for="phoneNumber">
+                        <i class="fas fa-mobile-alt"></i> Phone Number <span class="required-star">*</span>
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text">+880</span>
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="1XXXXXXXXX" maxlength="10" pattern="[1][0-9]{9}" autocomplete="tel" required>
+                    </div>
+                    <small class="text-muted mt-1 d-block"><i class="fas fa-info-circle"></i> ১০ ডিজিটের মোবাইল নম্বর (যেমন ১৭১২৩৪৫৬৭৮)</small>
+                    <div class="invalid-feedback">Mobile Number is not Correct, Please Provide 10 Digit Phone Number</div>
+                </div>
+
+                <!-- Area select (all given areas) -->
+                <div class="mb-3">
+                    <label class="form-label" for="areaSelect">
+                        <i class="fas fa-map-pin"></i> Select Your Area<span class="required-star">*</span>
+                    </label>
+                    <select class="form-select" id="areaSelect" name="area" required>
+                        <option value="" disabled selected>-- Select Area --</option>
+                        <option value="MIRBAGH">মিরবাগ (MIRBAGH)</option>
+                        <option value="MIRERTEK">মিরেরটেক (MIRERTEK)</option>
+                        <option value="EAST HAZIPARA">ইস্ট হাজীপাড়া (EAST HAZIPARA)</option>
+                        <option value="WEST HAZIPARA">ওয়েস্ট হাজীপাড়া (WEST HAZIPARA)</option>
+                        <option value="CHOWDHURY PARA R/A">চৌধুরী পাড়া R/A (CHOWDHURY PARA R/A)</option>
+                        <option value="MIRBAGH NOTUN RASTA">মিরবাগ নোটুন রাস্তা (MIRBAGH NOTUN RASTA)</option>
+                        <option value="BOU BAZAR ROAD">বউ বাজার রোড (BOU BAZAR ROAD)</option>
+                        <option value="RAMPURA">রামপুরা (RAMPURA)</option>
+                        <option value="MALIBAGH BAZAR">মালিবাগ বাজার (MALIBAGH BAZAR)</option>
+                        <option value="MALIBAGH RAILGATE">মালিবাগ রেলগেট (MALIBAGH RAILGATE)</option>
+                        <option value="MODHUBAGH">মধুবাগ (MODHUBAGH)</option>
+                        <option value="HATIRJHEEL">হাতিরঝিল (HATIRJHEEL)</option>
+                        <option value="EAST NAYATOLA">ইস্ট নয়াটোলা (EAST NAYATOLA)</option>
+                        <option value="NAYATOLA CHAIRMAN GOLI">নয়াটোলা চেয়ারম্যান গলি (NAYATOLA CHAIRMAN GOLI)</option>
+                        <option value="AAMBAGAN">আমবাগান (AAMBAGAN)</option>
+                        <option value="T&T COLONY">টি এন্ড টি কলোনি (T&T COLONY)</option>
+                        <option value="MOGHBAZAR WIRELESS">মগবাজার ওয়্যারলেস (MOGHBAZAR WIRELESS)</option>
+                        <option value="WIRELESS RAILGATE">ওয়্যারলেস রেলগেট (WIRELESS RAILGATE)</option>
+                    </select>
+                    <div class="invalid-feedback">Please Select Area</div>
+                </div>
+
+                <!-- Package dropdown (BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, VIP PACK, CORPORATE) -->
+                <div class="mb-3">
+                    <label class="form-label" for="packageSelect">
+                        <i class="fas fa-crown"></i> Select Package <span class="required-star">*</span>
+                    </label>
+                    <select class="form-select" id="packageSelect" name="package" required>
+                        <option value="" disabled selected>-- Chose Your Package --</option>
+                        <option value="BRONZE">🥉 BRONZE</option>
+                        <option value="SILVER">🥈 SILVER</option>
+                        <option value="GOLD">🥇 GOLD</option>
+                        <option value="PLATINUM">💎 PLATINUM</option>
+                        <option value="DIAMOND">🔷 DIAMOND</option>
+                        <option value="VIP PACK">👑 VIP PACK</option>
+                        <option value="CORPORATE">🏢 CORPORATE</option>
+                    </select>
+                    <div class="invalid-feedback">Please Select a Package</div>
+                </div>
+
+                <!-- Address: full textarea -->
+                <div class="mb-4">
+                    <label class="form-label" for="address">
+                        <i class="fas fa-house-chimney"></i> Address <span class="required-star">*</span>
+                    </label>
+                    <textarea class="form-control" id="address" name="address" rows="3" placeholder="House/Road/Block, Area ..." required></textarea>
+                    <div class="invalid-feedback">Please Provide Address</div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-submit mt-2">
+                    <i class="fas fa-paper-plane"></i> Submit
+                </button>
+
+                <!-- dynamic alert message box -->
+                <div id="formFeedback" class="alert-custom p-3 mt-4" role="alert"></div>
+            </form>
+        </div>
+        <footer>
+            <i class="fas fa-shield-alt me-1 text-primary"></i> তথ্য গোপন রাখা হবে • সঠিক তথ্য প্রদান করুন
+        </footer>
+    </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<!-- <footer class="footer">
+  <div class="container text-center">
+    <p class="mb-0">
+      © 2026 Mixon Online ISP. All Rights Reserved.
+    </p>
+  </div>
+</footer> -->
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    © 2026 Mixon Online ISP. All Rights Reserved.
+  </footer>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
